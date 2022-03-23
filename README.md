@@ -1,2 +1,46 @@
-# MSwin
-Self-attention on multi-shifted windows for scene parsing
+# Self-attention on Multi-shifted Windows for Scene Segmentation
+
+## Introduction
+
+This is the PyTorch implementation of our [Self-attention on Multi-shifted Windows for Scene Segmentation] by Litao Yu, Zhibin Li and Jian Zhang
+
+## Use of code
+
+This implementation is built based on mmsegmentation (https://mmsegmentation.readthedocs.io/). Please follow their instructions to install the necessary modules for running the programs.
+
+## Results and models
+
+### Pascal VOC 2012 + Aug
+
+| Method  | Backbone | Crop Size | Lr schd | mIoU | mIoU(ms+flip) | config                                                                                                                     | download                                                                                                                                                                                                                                                                                                                                               |
+| ------- | -------- | --------- | ------: | ----: | ------------: | -------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| UPerNet | R-50     | 512x1024  |   40000 | 77.10 |         78.37 | [config](https://github.com/open-mmlab/mmsegmentation/blob/master/configs/upernet/upernet_r50_512x1024_40k_cityscapes.py)  | [model](https://download.openmmlab.com/mmsegmentation/v0.5/upernet/upernet_r50_512x1024_40k_cityscapes/upernet_r50_512x1024_40k_cityscapes_20200605_094827-aa54cb54.pth) |
+| UPerNet | R-101    | 769x769   |   80000 | 80.10 |         81.49 | [config](https://github.com/open-mmlab/mmsegmentation/blob/master/configs/upernet/upernet_r101_769x769_80k_cityscapes.py)  | [model](https://download.openmmlab.com/mmsegmentation/v0.5/upernet/upernet_r101_769x769_80k_cityscapes/upernet_r101_769x769_80k_cityscapes_20200607_001014-082fc334.pth)  |
+
+### Pascal VOC 2012 + Aug
+
+| Method  | Backbone | Crop Size | Lr schd | mIoU | mIoU(ms+flip) | config                                                                                                                     | download                                                                                                                                                                                                                                                                                                                                               |
+| ------- | -------- | --------- | ------: | ----: | ------------: | -------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| UPerNet | R-50     | 512x1024  |   40000 | 77.10 |         78.37 | [config](https://github.com/open-mmlab/mmsegmentation/blob/master/configs/upernet/upernet_r50_512x1024_40k_cityscapes.py)  | [model](https://download.openmmlab.com/mmsegmentation/v0.5/upernet/upernet_r50_512x1024_40k_cityscapes/upernet_r50_512x1024_40k_cityscapes_20200605_094827-aa54cb54.pth) |
+| UPerNet | R-101    | 769x769   |   80000 | 80.10 |         81.49 | [config](https://github.com/open-mmlab/mmsegmentation/blob/master/configs/upernet/upernet_r101_769x769_80k_cityscapes.py)  | [model](https://download.openmmlab.com/mmsegmentation/v0.5/upernet/upernet_r101_769x769_80k_cityscapes/upernet_r101_769x769_80k_cityscapes_20200607_001014-082fc334.pth)  |
+
+### Pascal VOC 2012 + Aug
+
+| Method  | Backbone | Crop Size | Lr schd | mIoU | mIoU(ms+flip) | config                                                                                                                     | download                                                                                                                                                                                                                                                                                                                                               |
+| ------- | -------- | --------- | ------: | ----: | ------------: | -------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| UPerNet | R-50     | 512x1024  |   40000 | 77.10 |         78.37 | [config](https://github.com/open-mmlab/mmsegmentation/blob/master/configs/upernet/upernet_r50_512x1024_40k_cityscapes.py)  | [model](https://download.openmmlab.com/mmsegmentation/v0.5/upernet/upernet_r50_512x1024_40k_cityscapes/upernet_r50_512x1024_40k_cityscapes_20200605_094827-aa54cb54.pth) |
+| UPerNet | R-101    | 769x769   |   80000 | 80.10 |         81.49 | [config](https://github.com/open-mmlab/mmsegmentation/blob/master/configs/upernet/upernet_r101_769x769_80k_cityscapes.py)  | [model](https://download.openmmlab.com/mmsegmentation/v0.5/upernet/upernet_r101_769x769_80k_cityscapes/upernet_r101_769x769_80k_cityscapes_20200607_001014-082fc334.pth)  |
+
+### ADE20K
+
+| Method  | Backbone | Crop Size | Lr schd | mIoU | mIoU(ms+flip) | config                                                                                                                     | download                                                                                                                                                                                                                                                                                                                                               |
+| ------- | -------- | --------- | ------: | ----: | ------------: | -------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| UPerNet | R-50     | 512x1024  |   40000 | 77.10 |         78.37 | [config](https://github.com/open-mmlab/mmsegmentation/blob/master/configs/upernet/upernet_r50_512x1024_40k_cityscapes.py)  | [model](https://download.openmmlab.com/mmsegmentation/v0.5/upernet/upernet_r50_512x1024_40k_cityscapes/upernet_r50_512x1024_40k_cityscapes_20200605_094827-aa54cb54.pth) |
+| UPerNet | R-101    | 769x769   |   80000 | 80.10 |         81.49 | [config](https://github.com/open-mmlab/mmsegmentation/blob/master/configs/upernet/upernet_r101_769x769_80k_cityscapes.py)  | [model](https://download.openmmlab.com/mmsegmentation/v0.5/upernet/upernet_r101_769x769_80k_cityscapes/upernet_r101_769x769_80k_cityscapes_20200607_001014-082fc334.pth)  |
+
+### Cityscapes
+
+| Method  | Backbone | Crop Size | Lr schd | mIoU | mIoU(ms+flip) | config                                                                                                                     | download                                                                                                                                                                                                                                                                                                                                               |
+| ------- | -------- | --------- | ------: | ----: | ------------: | -------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| UPerNet | R-50     | 512x1024  |   40000 | 77.10 |         78.37 | [config](https://github.com/open-mmlab/mmsegmentation/blob/master/configs/upernet/upernet_r50_512x1024_40k_cityscapes.py)  | [model](https://download.openmmlab.com/mmsegmentation/v0.5/upernet/upernet_r50_512x1024_40k_cityscapes/upernet_r50_512x1024_40k_cityscapes_20200605_094827-aa54cb54.pth) |
+| UPerNet | R-101    | 769x769   |   80000 | 80.10 |         81.49 | [config](https://github.com/open-mmlab/mmsegmentation/blob/master/configs/upernet/upernet_r101_769x769_80k_cityscapes.py)  | [model](https://download.openmmlab.com/mmsegmentation/v0.5/upernet/upernet_r101_769x769_80k_cityscapes/upernet_r101_769x769_80k_cityscapes_20200607_001014-082fc334.pth)  |
